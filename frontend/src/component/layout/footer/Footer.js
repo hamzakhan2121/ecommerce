@@ -19,9 +19,9 @@ const footer = () => {
             </div>
             <div className="rightFooter">
                 <h4>Follow Us</h4>
-                <a href="#">Instagram</a>
-                <a href="#">Youtube</a>
-                <a href="#">Facebook</a>
+                <a href="/">Instagram</a>
+                <a href="/">Youtube</a>
+                <a href="/">Facebook</a>
             </div>
         </footer>
     )

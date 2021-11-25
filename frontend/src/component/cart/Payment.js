@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import CheckoutSteps from './Cart/Checkoutsteps';
 import { useSelector, useDispatch } from 'react-redux';
 import MetaData from '../layout/metaData';

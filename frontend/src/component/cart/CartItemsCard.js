@@ -5,7 +5,7 @@ import "./cartItemCard.css"
 const CartItemsCard = ({item,deleteCartItems}) => {
     return (
         <div className="CartItemCard">
-            <img src={item.image} alt="image"/>
+            <img src={item.image} alt="card img "/>
             <div>
                 <Link to={`/product/${item.product}`}>{item.name}</Link>
                 <span>Price: &#8360;{item.price}</span>

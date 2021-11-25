@@ -9,7 +9,6 @@ import { getAdminProducts } from '../../actions/productAction.js'
 import { getAllOrders } from "../../actions/orderAction"
 import { getAllUsers } from '../../actions/userAction.js'
 import MetaData from '../layout/metaData.js'
-import { DiBlackberry } from 'react-icons/di'
 
 const Dashboard = () => {
     const dispatch = useDispatch();

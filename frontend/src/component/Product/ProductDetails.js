@@ -3,13 +3,12 @@ import Carousel from 'react-material-ui-carousel'
 import './productDetails.css'
 import { useSelector, useDispatch } from 'react-redux'
 import { clearErrors, getProductDetails, newReview } from '../../actions/productAction';
-import ReactStars from 'react-rating-stars-component';
 import ReviewCard from "./ReviewCard.js"
 import Loader from "../layout/loader/Loader"
 import { useAlert } from 'react-alert';
 import MetaData from '../layout/metaData';
 import {addItemsToCart} from '../../actions/cartAction';
-import{Dialog,DialogActions,DialogContent,DialogTitle,Button, DialogContentText} from "@material-ui/core";
+import{Dialog,DialogActions,DialogContent,DialogTitle,Button} from "@material-ui/core";
 import {Rating} from "@material-ui/lab"
 import { NEW_REVIEW_RESET } from '../../constants/productConstants';
 const ProductDetails = ({ match }) => {
@@ -126,7 +125,7 @@ const ProductDetails = ({ match }) => {
                         </div>
                         <h3 className="reviewsHeading">REVIEWS</h3>
 
-                        <Dialog aria-aria-labelledby="simple-dialog-title" open={open} onClose={submitReviewToggle}>
+                        <Dialog aria-labelledby="simple-dialog-title" open={open} onClose={submitReviewToggle}>
                                 <DialogTitle>Submit Review</DialogTitle>
                                 <DialogContent className="submitDialog">
                                     <Rating onChange={(e)=>setRating(e.target.value)} value={rating} size="large"/>
